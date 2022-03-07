@@ -56,7 +56,7 @@ main{
 
 /* NAV */
 nav.top{
-    width: 100%;
+    width: calc(100% - 230px); /* può crearmi problemi per mediaquery */
     height: 90px;
     background-color: rgba(0, 0, 0, 0.3); /* Vedere poi se RGBA VA BENE */
     position: fixed;
@@ -68,14 +68,14 @@ nav.top{
     padding: 10px 20px;
     border-radius: 20px;
     text-transform: uppercase;
+    position: absolute;
+    right: 0%;
+    top: 25px;
 }
 .nav-button{
-    width: 100%;
+    position: relative;
 }
-nav .flex-container{
-    justify-content: flex-end; 
-    align-items: center; 
-}
+
 
 /* BLOCCO PRINCIPALE SX */
 .main-content{
