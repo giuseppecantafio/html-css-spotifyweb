@@ -35,8 +35,10 @@ body{
     justify-content: start; 
     align-items: stretch; 
 }
-.active{
-    border-bottom: 2px solid greenyellow;
+.grey-text{
+    font-size: 0.8em;
+    color: #676c72;
+    font-weight: bolder;
 }
 
 
@@ -55,12 +57,13 @@ main{
     width: calc(100% - 230px);
     /* height: 100%; inutile perché di base il main è stretchato! */
     background-color: #151922;
+    overflow-y: auto; /* vedere se funziona */
     
 }
 
 /* NAV TOP */
 nav.top{
-    width: calc(100% - 230px); /* può crearmi problemi per mediaquery */
+    width: calc(100% - 250px); /* può crearmi problemi per mediaquery (230px aside + 20px barra di scorrimento*/
     height: 90px;
     background-color: rgba(0, 0, 0, 0.3); /* Vedere poi se RGBA VA BENE */
     position: fixed;
@@ -73,7 +76,7 @@ nav.top{
     border-radius: 20px;
     text-transform: uppercase;
     position: absolute;
-    right: 0%;
+    right: 0px;
     top: 45px;
     transform: translate(0, -50%);
 }
@@ -125,9 +128,34 @@ nav.bottom ul li a{
     font-size: 1em;
     font-weight: 500;
 }
+.active-1{
+    border-bottom: 2px solid greenyellow;
+}
 nav.bottom ul li a:hover{
     color: white;
 }
+
+/* SEZIONE PLAYLIST */
+section.section-playlist{
+    width: 90%;
+    margin: 0 auto;
+}
+section.section-playlist ul{
+    list-style-type: none;
+}
+section.section-playlist ul.flex-container{
+    flex-wrap: wrap;
+    gap: 5px;
+}
+section.section-playlist ul li{
+    width: calc((100% / 6) - 10px);
+}
+section.section-playlist ul li img{
+    height: 150px;
+    width: 150px;
+}
+
+
 
 /* ---------- FOOTER */
 
