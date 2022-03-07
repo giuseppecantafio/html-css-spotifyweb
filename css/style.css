@@ -109,9 +109,11 @@ nav.bottom ul{
 }
 nav.bottom ul.flex-container{
     justify-content: center;
+    flex-wrap: wrap;
 }
 nav.bottom ul li{
-    padding: 0 15px;
+    padding: 15px 15px;
+    
 }
 nav.bottom ul li a{
     color: #72757a;
