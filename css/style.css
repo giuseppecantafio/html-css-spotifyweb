@@ -35,13 +35,16 @@ body{
     justify-content: start; 
     align-items: stretch; 
 }
+.active{
+    border-bottom: 2px solid greenyellow;
+}
 
 
 
 /* ---------- CORPO CENTRALE */
 
 
-/* ASIDE DX */
+/* ASIDE SX */
 aside{
     width: 230px;
     background-color: transparent;
@@ -55,7 +58,7 @@ main{
     
 }
 
-/* NAV SX */
+/* NAV TOP */
 nav.top{
     width: calc(100% - 230px); /* può crearmi problemi per mediaquery */
     height: 90px;
