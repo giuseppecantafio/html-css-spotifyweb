@@ -1,0 +1,77 @@
+/* ---------- RESET E DEBUG */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug{
+    border: 1px solid white;
+}
+
+
+/* ---------- GENERAL RULES */
+
+
+body{
+    background-color: black; /* Predere colore esatto */
+    color: white;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+.wrapper-content{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    background-color: white; /* TOGLIERE */
+    flex-flow: row nowrap; /* è già così di default */
+    justify-content: start; /* già default */
+    align-items: stretch; /* già default* */
+}
+
+
+/* ---------- CORPO CENTRALE */
+
+
+/* ASIDE */
+aside{
+    width: 230px;
+    background-color: red; /* TOGLIERE */
+}
+
+/* MAIN */
+main{
+    width: calc(100% - 230px);
+    /* height: 100%; inutile perché di base il main è stretchato! */
+    background-color: orange; /* TOGLIERE */
+    
+}
+nav.top{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.3); /* Vedere poi se RGBA VA BENE */
+    position: fixed;
+    z-index: 1000;
+}
+.main-content{
+    height: 100%;
+    width: 100%;
+    padding-top: 90px;
+    overflow-y: auto;
+}
+
+
+/* ---------- FOOTER */
+
+
+footer{
+    height: 90px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+}
