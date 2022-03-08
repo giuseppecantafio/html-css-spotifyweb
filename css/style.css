@@ -49,10 +49,11 @@ body{
 /* ASIDE SX */
 aside{
     width: 230px;
-    height: calc(100vh -90px);
+    height: 100%;
     padding: 10px;
     padding-right: 10px;
     background-color: transparent;
+    position: relative;
 }
 aside div.logo-container img{
     width: 50%;
@@ -143,9 +144,14 @@ aside .aside-menu-3 ul li:nth-child(2) a{
 aside.flex-container{
     flex-flow: column nowrap;
     justify-content: flex-start;
+
 }
 .aside-menu-3{
-    align-self: flex-end;
+    background-color: black;
+    width: 210px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
 }
 
 
