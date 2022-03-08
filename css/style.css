@@ -56,16 +56,33 @@ aside div.logo-container img{
     width: 80%;
     padding-top: 10px;
 }
-aside .aside-menu-1 ul{
+aside .aside-menu-1 ul, .aside-menu-2 ul{
     list-style-type: none;
+}
+aside .aside-menu-1 ul li a, .aside-menu-2 ul li a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #676c72;
+    font-weight: bolder;
 }
 aside .aside-menu-1 ul li{
     line-height: 30px;
+    
 }
 aside .aside-menu-1 ul li img{
     width: 30px;
     height: 30px;
     padding-right: 5px;
+}
+aside .aside-menu-1 ul li:first-child a{
+    color: white;
+}
+.aside-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bolder;
+
 }
 
 
