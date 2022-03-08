@@ -49,8 +49,26 @@ body{
 /* ASIDE SX */
 aside{
     width: 230px;
+    padding: 10px;
     background-color: transparent;
 }
+aside div.logo-container img{
+    width: 80%;
+    padding-top: 10px;
+}
+aside .aside-menu-1 ul{
+    list-style-type: none;
+}
+aside .aside-menu-1 ul li{
+    line-height: 30px;
+}
+aside .aside-menu-1 ul li img{
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+
 
 /* MAIN */
 main{
@@ -148,7 +166,7 @@ section.section-playlist ul.flex-container{
 }
 section.section-playlist ul li{
     width: calc((100% / 6) - 10px);
-    min-width: 180px; /* qui togliere la min-width se non vogliamo che vadano a capo le immagini */
+     min-width: 180px; /* qui togliere la min-width se non vogliamo che vadano a capo le immagini */
 }
 section.section-playlist ul li img{
     height: 180px;
