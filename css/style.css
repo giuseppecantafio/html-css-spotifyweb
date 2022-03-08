@@ -49,6 +49,7 @@ body{
 /* ASIDE SX */
 aside{
     width: 230px;
+    height: calc(100vh -90px);
     padding: 10px;
     padding-right: 10px;
     background-color: transparent;
@@ -135,6 +136,16 @@ aside .aside-menu-3 ul li:nth-child(2) img{
 aside .aside-menu-3 ul li:nth-child(2) a{
     color: white;
     font-size: 0.9em;
+}
+
+
+/* PROVE PER SPOSTARE ASIDE MENU 3 SOTTO */
+aside.flex-container{
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+.aside-menu-3{
+    align-self: flex-end;
 }
 
 
