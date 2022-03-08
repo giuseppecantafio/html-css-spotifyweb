@@ -253,22 +253,28 @@ section.section-playlist ul.flex-container{
 }
 section.section-playlist ul li{
     width: calc((100% / 6) - 10px);
-     min-width: 180px; /* qui togliere la min-width se non vogliamo che vadano a capo le immagini */
+    /* min-width: 180px  Da togliere per far scalare */
 }
 section.section-playlist ul li img{
-    height: 180px;
-    width: 180px;
+    /* height: 180px;
+    width: 180px; */
+    height: calc((100vw / 6) - 10px);
+    width: calc((100vw / 6) - 10px); 
+    padding: 30px;
 }
 .section-title{
-    font-size: 1.5em;
+    font-size: 4vh;
     font-weight: 800;
     padding: 30px 0 20px 0;
 }
 .card-text{
-    font-size: 0.9em;
+    font-size: 2.5vh;
     font-weight: 800;
     text-align: center;
     padding: 10px 0;
+}
+section.section-playlist ul li p.grey-text{
+    font-size: 2vh;
 }
 section.section-playlist div.grey-text{
     padding-bottom: 20px;
