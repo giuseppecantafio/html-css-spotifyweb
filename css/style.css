@@ -50,16 +50,21 @@ body{
 aside{
     width: 230px;
     padding: 10px;
+    padding-right: 10px;
     background-color: transparent;
 }
 aside div.logo-container img{
-    width: 80%;
-    padding-top: 10px;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
-aside .aside-menu-1 ul, .aside-menu-2 ul{
+aside .aside-menu-1{
+    padding-bottom: 10px;
+}
+aside .aside-menu-1 ul, .aside-menu-2 ul, .aside-menu-3{
     list-style-type: none;
 }
-aside .aside-menu-1 ul li a, .aside-menu-2 ul li a{
+aside .aside-menu-1 ul li a, .aside-menu-2 ul li a, .aside-menu-3 ul li a{
     text-decoration: none;
     font-size: 0.8em;
     color: #676c72;
@@ -82,8 +87,56 @@ aside .aside-menu-1 ul li:first-child a{
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: bolder;
-
 }
+.aside-button{
+    padding: 0px 10px;
+    background-color: #a3a3a3;
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+}
+aside .aside-menu-2{
+    overflow-y: auto;
+}
+aside .aside-menu-2 ul li.flex-container{
+    align-items: center;
+    gap: 10px;
+}
+aside .aside-menu-2 ul li{
+    padding-bottom: 10px;
+}
+.active-2{
+    border-left: 3px solid #affd38;
+    margin-left: -10px;
+    padding-left: 8px;
+}
+aside .aside-menu-3 ul li.flex-container{
+    align-items: center;
+    gap: 10px;
+}
+aside .aside-menu-3 ul li:first-of-type{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+aside .aside-menu-3 ul li:last-of-type{
+    padding-top: 10px;
+}
+aside .aside-menu-3 ul li img{
+    width: 20px;
+    height: 20px;
+}
+aside .aside-menu-3 ul li:nth-child(2) img{
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    padding: 2px;
+    border-radius: 50%;
+}
+aside .aside-menu-3 ul li:nth-child(2) a{
+    color: white;
+    font-size: 0.9em;
+}
+
 
 
 
@@ -163,7 +216,7 @@ nav.bottom ul li a{
     font-weight: 500;
 }
 .active-1{
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 2px solid #affd38;
 }
 nav.bottom ul li a:hover{
     color: white;
