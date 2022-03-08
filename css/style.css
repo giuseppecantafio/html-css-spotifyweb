@@ -266,13 +266,13 @@ section.section-playlist ul li img{
     padding: 30px 0 20px 0;
 }
 .card-text{
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     font-weight: 800;
     text-align: center;
     padding: 10px 0;
 }
 section.section-playlist ul li p.grey-text{
-    font-size: 2vh;
+    font-size: 1.8vh;
 }
 section.section-playlist div.grey-text{
     padding-bottom: 20px;
@@ -296,4 +296,45 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0%;
+}
+.nav-left{
+    height: 100%;
+    width: 25%;
+}
+
+.nav-center{
+    height: 100%;
+    width: 50%;
+}
+.nav-right{
+    height: 100%;
+    width: 25%;
+}
+div.nav-left.flex-container{
+    align-items: center;
+}
+.block-1 img{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+.block-2{
+    padding-right: 45px;
+}
+.block-2 ul{
+    list-style-type: none;
+}
+.block-2 ul li{
+    font-size: 0.7em;
+    color: white;
+}
+.block-2 ul li:first-of-type{
+    font-weight: 800;
+}
+.block-3 i{
+    font-size: 1em;
+    color: #676c72;
+}
+.block-3 i:first-of-type{
+    padding-right: 15px;
 }
