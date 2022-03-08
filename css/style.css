@@ -253,14 +253,12 @@ section.section-playlist ul.flex-container{
 }
 section.section-playlist ul li{
     width: calc((100% / 6) - 10px);
+    text-align: center;
     /* min-width: 180px  Da togliere per far scalare */
 }
 section.section-playlist ul li img{
-    /* height: 180px;
-    width: 180px; */
-    height: calc((100vw / 6) - 10px);
-    width: calc((100vw / 6) - 10px); 
-    padding: 30px;
+    height: calc(((100vw - 230px) / 6) - 45px);
+    width: calc(((100vw - 230px) / 6) - 45px);
 }
 .section-title{
     font-size: 4vh;
