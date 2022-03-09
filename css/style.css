@@ -421,12 +421,15 @@ footer{
     width: 70%;
     background-color: #5a5a5a;
     border-radius: 1.2pt;
-    overflow: hidden;
+
 }
 .nav-center .block-bottom .playbar-time{
     height: 100%;
     width: 30%;
+    border-top-left-radius: 1.2pt;
+    border-bottom-left-radius: 1.2pt;
     background-color: #c1c1c1;
+    position: relative;
 }
 .nav-center .block-bottom .playbar-text{
     font-size: 0.6em;
@@ -446,14 +449,15 @@ footer{
     min-width: 70px;
     background-color: #5a5a5a;
     border-radius: 1.2pt;
-    overflow: hidden;
 }
 .nav-right .volume-time{
     height: 100%;
     width: 30%;
+    border-top-left-radius: 1.2pt;
+    border-bottom-left-radius: 1.2pt;
     background-color: #c1c1c1;
+    position: relative;
 }
-
 .nav-right .icon-container{
     flex-wrap: wrap;
     flex: 0 1 auto;
@@ -468,5 +472,40 @@ footer{
 }
 .nav-left .block-3 a i:hover{
     color: white;
+}
+.nav-center .block-bottom .playbar-case a .overlay-circle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    visibility: hidden;
+}
+.nav-center .block-bottom .playbar-case a .playbar-time:hover{
+    background-color: greenyellow;
+}
+.nav-center .block-bottom .playbar-case a .playbar-time:hover .overlay-circle{
+    visibility: visible;
+}
+.nav-right .volume-case a .overlay-circle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    visibility: hidden;
+}
+.nav-right .volume-case a .volume-time:hover{
+    background-color: greenyellow;
+}
+.nav-right .volume-case a .volume-time:hover .overlay-circle{
+    visibility: visible;
+} 
+.nav-center .block-top .fa-circle-play:hover{
+    font-size: 6vh;
 }
 
