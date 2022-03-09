@@ -90,7 +90,7 @@ aside .aside-menu-1 ul li:first-child a{
     font-size: 0.8em;
     font-weight: bolder;
 }
-.aside-button{
+#aside-button{
     padding: 0px 10px;
     background-color: #a3a3a3;
     color: black;
@@ -138,9 +138,6 @@ aside .aside-menu-3 ul li:nth-child(2) a{
     color: white;
     font-size: 0.9em;
 }
-aside ul li a:hover{
-    color: white;
-}
 aside.flex-container{
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -153,10 +150,18 @@ aside.flex-container{
     bottom: 0px;
     left: 10px;
 }
-
-
-
-/* .aside-menu-2 ul li:nth-child(2):hover{ */
+aside ul li a:hover{
+    color: white;
+}
+.aside-menu-2 ul li:nth-child(2) #aside-button:hover{
+    background-color: white;
+}
+.aside-menu-2 ul li:nth-child(2) a.flex-container{
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+/* concludere alcuni hover aside */
 
 
 
@@ -367,20 +372,23 @@ footer{
 .nav-left .block-2 ul{
     list-style-type: none;
 }
-.nav-left .block-2 ul li{
+
+.nav-left .block-2 ul li a{
     font-size: 0.7em;
     color: white;
+    text-decoration: none;
 }
-.nav-left .block-2 ul li:first-of-type{
+.nav-left .block-2 ul li:first-of-type a{
+    font-size: 0.8em;
     font-weight: 800;
 }
 .nav-left .block-3.flex-container{
     flex-wrap: wrap;
 }
-.nav-left .block-3 i{
+.nav-left .block-3 a i{
     font-size: 1em;
     color: #676c72;
-    padding: 5px 10px 15px 10px;
+    padding: 5px 0px 15px 10px;
 }
 
 .nav-center .block-top{
@@ -454,5 +462,11 @@ footer{
     font-size: 1em;
     color: #676c72;
     padding: 10px 5px 10px 10px;
+}
+.nav-left .block-2 ul li:last-of-type:hover{
+     text-decoration: underline;
+}
+.nav-left .block-3 a i:hover{
+    color: white;
 }
 
