@@ -154,7 +154,10 @@ aside.flex-container{
     left: 10px;
 }
 
+
+
 /* .aside-menu-2 ul li:nth-child(2):hover{ */
+
 
 
 /* MAIN */
@@ -254,11 +257,40 @@ section.section-playlist ul.flex-container{
 section.section-playlist ul li{
     width: calc((100% / 6) - 10px);
     text-align: center;
-    /* min-width: 180px  Da togliere per far scalare */
+    /* min-width: 180px  Da togliere per far scalare, riusa per mediaquery */
+}
+section.section-playlist ul li .img-container{
+    position: relative;
+}
+section.section-playlist ul li .overlay,
+section.section-playlist ul li.round-overlay{
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    visibility: hidden;
+}
+section.section-playlist ul li .overlay .overlay-text,
+section.section-playlist ul li .round-overlay .overlay-text{
+    font-size: 6vh;
+}
+section.section-playlist ul li .overlay .overlay-text.flex-container,
+section.section-playlist ul li .round-overlay .overlay-text.flex-container{
+    width: 100%;
+    height: calc(100% - 4px);
+    justify-content: center;
+    align-items: center;
+}
+section.section-playlist ul li .img-container:hover .overlay,
+section.section-playlist ul li .img-container:hover .round-overlay{
+    visibility: visible;
 }
 section.section-playlist ul li img{
-    height: calc(((100vw - 230px) / 6) - 45px);
-    width: calc(((100vw - 230px) / 6) - 45px);
+    width: 100%;
 }
 .section-title{
     font-size: 4vh;
@@ -283,7 +315,18 @@ section.section-playlist ul li p.grey-text{
 .round-img{
     border-radius: 50%;
 }
-
+section.section-playlist ul li .round-overlay{
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    visibility: hidden;
+}
 
 
 /* ---------- FOOTER */
