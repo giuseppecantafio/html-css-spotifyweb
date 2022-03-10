@@ -262,7 +262,7 @@ section.section-playlist ul.flex-container{
 section.section-playlist ul li{
     width: calc((100% / 6) - 10px);
     text-align: center;
-    /* min-width: 180px  Da togliere per far scalare, riusa per mediaquery */
+    
 }
 section.section-playlist ul li .img-container{
     position: relative;
@@ -509,3 +509,41 @@ footer{
     font-size: 6vh;
 }
 
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1200px) {
+    section.section-playlist ul li{
+        width: calc((100% / 4) - 10px);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.section-playlist ul li{
+        width: calc((100% / 2) - 10px);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section.section-playlist ul li{
+        width: calc((100% / 2) - 10px);
+        text-align: center;
+    }
+    .logo-container,
+    .aside-menu-1,
+    .aside-menu-2,
+    .aside-menu-3{
+        display: none;
+    }
+    aside{
+        width: 50px;
+    
+    }
+    main{
+        width: calc(100% - 50px);
+    }
+    nav.top{
+        width: calc(100% - 70px);
+}
