@@ -17,7 +17,7 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-color: black; /* Predere colore esatto */
+    background-color: black;
     color: white;
 }
 .wrapper{
@@ -192,7 +192,7 @@ main{
 nav.top{
     width: calc(100% - 250px); /* può crearmi problemi per mediaquery (230px aside + 20px barra di scorrimento*/
     height: 90px;
-    background-color: rgba(0, 0, 0, 0.3); /* Vedere poi se RGBA VA BENE */
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     z-index: 1000;
 }
@@ -361,16 +361,15 @@ footer{
 }
 .nav-left{
     height: 100%;
-    width: 25%;
+    width: 30%;
 }
-
 .nav-center{
     height: 100%;
-    width: 50%;
+    width: 40%;
 }
 .nav-right{
     height: 100%;
-    width: 25%;
+    width: 30%;
 }
 .nav-left.flex-container{
     align-items: center;
@@ -402,7 +401,7 @@ footer{
 .nav-left .block-3 a i{
     font-size: 1em;
     color: #676c72;
-    padding: 5px 0px 15px 10px;
+    padding: 0px 5px 15px 10px;
 }
 
 .nav-center .block-top{
