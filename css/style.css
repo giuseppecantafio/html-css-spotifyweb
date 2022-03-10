@@ -420,6 +420,13 @@ footer{
 .nav-center .block-top i{
     font-size: 3vh;
 }
+.nav-center .block-top .play-container{
+    width: 50px;
+}
+.nav-center .block-top .play-container.flex-container{
+    justify-content: center;
+    align-items: center;
+}
 .nav-center .block-top i.fa-circle-play{
     font-size: 4.5vh;
 }
