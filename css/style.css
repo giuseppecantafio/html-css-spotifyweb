@@ -190,7 +190,7 @@ main{
 
 /* NAV TOP */
 nav.top{
-    width: calc(100% - 250px); /* può crearmi problemi per mediaquery (230px aside + 20px barra di scorrimento*/
+    width: calc(100% - 230px);
     height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -363,15 +363,15 @@ footer{
 }
 .nav-left{
     height: 100%;
-    width: 30%;
+    width: 25%;
 }
 .nav-center{
     height: 100%;
-    width: 40%;
+    width: 50%;
 }
 .nav-right{
     height: 100%;
-    width: 30%;
+    width: 25%;
 }
 .nav-left.flex-container{
     align-items: center;
@@ -537,14 +537,11 @@ footer{
 @media screen and (max-width: 1200px) {
     section.section-playlist ul li{
         width: calc((100% / 4) - 10px);
-        text-align: center;
     }
 }
-
 @media screen and (max-width: 768px) {
     section.section-playlist ul li{
         width: calc((100% / 2) - 10px);
-        text-align: center;
     }
     .nav-right .icon-container {
         display: flex;
@@ -552,11 +549,9 @@ footer{
         justify-content: center;
     }
 }
-
 @media screen and (max-width: 576px) {
     section.section-playlist ul li{
         width: calc((100% / 2) - 10px);
-        text-align: center;
     }
     aside{
         width: 50px;
@@ -565,7 +560,7 @@ footer{
         width: calc(100% - 50px);
     }
     nav.top{
-        width: calc(100% - 70px);
+        width: calc(100% - 50px);
     }
     aside .logo-container svg{
         display: none;
@@ -588,6 +583,9 @@ footer{
     }
     aside .aside-menu-1 ul li:first-child a svg{
         fill: #676c72;
+    }
+    aside .aside-menu-1 ul li:first-child a:hover svg{
+        fill: white;
     }
     .active-2{
         border-left: 0px;
