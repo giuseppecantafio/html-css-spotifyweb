@@ -85,6 +85,9 @@ aside .aside-menu-1 ul li a svg{
 aside .aside-menu-1 ul li:first-child a{
     color: white;
 }
+aside .aside-menu-1 ul li:first-child a svg{
+    fill: white;
+}
 .aside-title{
     color: white;
     text-transform: uppercase;
@@ -549,20 +552,59 @@ footer{
         width: calc((100% / 2) - 10px);
         text-align: center;
     }
-    .logo-container,
-    .aside-menu-1,
-    .aside-menu-2,
-    .aside-menu-3{
-        display: none;
-    }
     aside{
         width: 50px;
-    
     }
     main{
         width: calc(100% - 50px);
     }
     nav.top{
         width: calc(100% - 70px);
+    }
+    aside .logo-container svg{
+        display: none;
+    }
+    aside .logo-container{
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/logo-small.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .aside-menu-1{
+        padding-top: 10px;
+    }
+    .aside-menu-1 ul li span{
+        display: none;
+    }
+    .aside-menu-1 ul li svg{
+        margin-left: 2px;
+    }
+    aside .aside-menu-1 ul li:first-child a svg{
+        fill: #676c72;
+    }
+    .active-2{
+        border-left: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .aside-menu-2{
+        display: none;
+    }
+    .aside-menu-3{
+        background-color: transparent;
+        width: 40px;
+    }
+    .aside-menu-3 ul li svg{
+        margin-left: 4px;
+    }
+    .aside-menu-3 ul li span{
+        display: none;
+    }
+    aside .aside-menu-3 ul li:first-of-type{
+        border-bottom: 0px;
+    }
+    aside .aside-menu-3 ul li:last-of-type{
+        padding-top: 0px;
     }
 }
