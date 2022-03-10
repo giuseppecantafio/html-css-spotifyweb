@@ -204,7 +204,7 @@ nav.top{
     border-radius: 20px;
     text-transform: uppercase;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 45px;
     transform: translate(0, -50%);
     
@@ -216,7 +216,7 @@ nav.top{
     border-radius: 25px;
     text-transform: uppercase;
     position: absolute;
-    right: 0%;
+    right: 20px;
     top: 45px;
     transform: translate(0, -50%);
 }
