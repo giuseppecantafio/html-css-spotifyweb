@@ -312,18 +312,18 @@ section.section-playlist ul li img{
     width: 100%;
 }
 .section-title{
-    font-size: 4vh;
+    font-size: 2em;
     font-weight: 800;
     padding: 30px 0 20px 0;
 }
 .card-text{
-    font-size: 2.2vh;
+    font-size: 1em;
     font-weight: 800;
     text-align: center;
     padding: 10px 0;
 }
 section.section-playlist ul li p.grey-text{
-    font-size: 1.8vh;
+    font-size: 0.8em;
 }
 section.section-playlist div.grey-text{
     padding-bottom: 20px;
@@ -421,7 +421,7 @@ footer{
     gap: 25px;
 }
 .nav-center .block-top i{
-    font-size: 3vh;
+    font-size: 1.2em;
 }
 .nav-center .block-top .play-container{
     width: 50px;
@@ -431,7 +431,7 @@ footer{
     align-items: center;
 }
 .nav-center .block-top i.fa-circle-play{
-    font-size: 4.5vh;
+    font-size: 2em;
 }
 .nav-center .block-bottom.flex-container{
     justify-content: center;
@@ -527,7 +527,7 @@ footer{
     visibility: visible;
 } 
 .nav-center .block-top .fa-circle-play:hover{
-    font-size: 6vh;
+    font-size: 3em;
 }
 
 
