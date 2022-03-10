@@ -55,10 +55,11 @@ aside{
     background-color: transparent;
     position: relative;
 }
-aside div.logo-container img{
+aside div.logo-container svg{
     width: 50%;
     padding-top: 5px;
     padding-bottom: 10px;
+    color: white;
 }
 aside .aside-menu-1{
     padding-bottom: 10px;
@@ -74,12 +75,12 @@ aside .aside-menu-1 ul li a, .aside-menu-2 ul li a, .aside-menu-3 ul li a{
 }
 aside .aside-menu-1 ul li{
     line-height: 30px;
-    
 }
-aside .aside-menu-1 ul li img{
+aside .aside-menu-1 ul li a svg{
     width: 30px;
     height: 30px;
     padding-right: 5px;
+    vertical-align: middle;
 }
 aside .aside-menu-1 ul li:first-child a{
     color: white;
@@ -107,14 +108,10 @@ aside .aside-menu-2 ul li.flex-container{
 aside .aside-menu-2 ul li{
     padding-bottom: 10px;
 }
-.active-2{
-    border-left: 3px solid #affd38;
-    margin-left: -10px;
-    padding-left: 8px;
-}
 aside .aside-menu-3 ul li.flex-container{
     align-items: center;
     gap: 10px;
+    padding-bottom: 5px;
 }
 aside .aside-menu-3 ul li:first-of-type{
     border-bottom: 1px solid gray;
@@ -123,25 +120,29 @@ aside .aside-menu-3 ul li:first-of-type{
 aside .aside-menu-3 ul li:last-of-type{
     padding-top: 10px;
 }
-aside .aside-menu-3 ul li img{
+aside .aside-menu-3 ul li a svg{
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
-aside .aside-menu-3 ul li:nth-child(2) img{
+aside .aside-menu-3 ul li a span{
+    padding-left: 5px;
+}
+aside .aside-menu-3 ul li:nth-child(2) svg{
     width: 25px;
     height: 25px;
     background-color: gray;
     padding: 2px;
     border-radius: 50%;
 }
-aside .aside-menu-3 ul li:nth-child(2) a{
+aside .aside-menu-3 ul li:nth-child(2) span{
     color: white;
     font-size: 0.9em;
+    font-weight: 800;
 }
 aside.flex-container{
     flex-flow: column nowrap;
     justify-content: flex-start;
-
 }
 .aside-menu-3{
     background-color: black;
@@ -149,6 +150,11 @@ aside.flex-container{
     position: absolute;
     bottom: 0px;
     left: 10px;
+}
+.active-2{
+    border-left: 3px solid #affd38;
+    margin-left: -10px;
+    padding-left: 8px;
 }
 aside ul li a:hover{
     color: white;
@@ -161,7 +167,12 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 }
-/* concludere alcuni hover aside */
+aside .aside-menu-1 ul li a:hover svg{
+    color: white;
+}
+aside .aside-menu-3 ul li a:hover svg{
+    color: white;
+}
 
 
 
@@ -546,4 +557,5 @@ footer{
     }
     nav.top{
         width: calc(100% - 70px);
+    }
 }
